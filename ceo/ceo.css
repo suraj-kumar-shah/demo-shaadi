@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.ceo-section {
+  padding: 80px 40px;
+  background: #ffffff;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ceo-section h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #1f2937;
+}
+
+.ceo-card {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  background: #fafafa;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.ceo-image img {
+  width: 260px;
+  height: auto;
+  border-radius: 16px;
+}
+
+.ceo-content h2 {
+  font-size: 30px;
+  color: #b76e79;
+  margin-bottom: 5px;
+}
+
+.ceo-content h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.ceo-content .intro {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.details h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.details ul {
+  margin: 10px 0 15px 20px;
+}
+
+.details ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.details p {
+  margin-top: 10px;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .ceo-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-image img {
+    width: 200px;
+  }
+}
