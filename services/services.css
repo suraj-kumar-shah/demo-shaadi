@@ -1,17 +1,23 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+.text-choose-category {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
 
 .services-section {
-  background: white;
   text-align: center;
 }
 
 .services-section h1 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 15px;
   color: #1f2937;
 
@@ -20,15 +26,14 @@
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  max-width: 1200px;
+  gap: 30px;
+  max-width: 1300px;
   margin: auto;
 }
 
 .service-card {
   background: #fff;
   border-radius: 16px;
-  padding: 25px 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
   cursor: pointer;
@@ -39,9 +44,10 @@
 }
 
 .service-card img {
-  width: 90px;
-  height: auto;
-  margin-bottom: 15px;
+  width: 100px;
+  height: 120px;
+  object-fit: contain;
+
 }
 
 .service-card h3 {
@@ -52,7 +58,11 @@
 
 .service-card p {
   font-size: 14px;
-  color: #6b7280;
+  color: black;
+}
+.service-card {
+  padding-bottom: 25px;
+  margin-top: 10px;
 }
 
 /* packages */
@@ -67,4 +77,28 @@
 /* rating  */
 .rate {
   color: yellow;
+}
+
+
+/* chose wedding service category */
+.text-choose-category {
+  padding-top: 0px;
+  margin-top: 0px;
+ 
+}
+
+.services-section {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/* hilight */
+.hilight-star {
+  color: rgb(255, 153, 0);
+
+
+}
+.hilight-number {
+  color: blue;
+
 }

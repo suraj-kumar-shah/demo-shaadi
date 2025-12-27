@@ -1,3 +1,15 @@
+:root {
+  --primary: #E8B89A;
+  --primary-dark: #D9A07E;
+  --bg-main: #FFF7F0;
+  --bg-card: #FFFFFF;
+  --bg-soft: #FBE4DA;
+  --text-dark: #2B2B2B;
+  --text-light: #8A8A8A;
+  --border: #F1E5DD;
+  --shadow: rgba(0,0,0,0.06);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,80 +17,109 @@
   font-family: Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-dark);
+}
+
+/* ================= HEADER ================= */
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: var(--bg-main);
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 .logo img {
-  width: 220px;
+  width: 300px;
+  object-fit: contain;
+ 
+
 }
+
+/* ================= NAVBAR ================= */
 
 .navbar {
   display: flex;
+  gap: 22px;
   align-items: center;
-  gap: 20px;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-dark);
   font-weight: 500;
-  font-size: 18px;
+  padding: 6px 4px;
 }
 
-.login {
-  background: #b76e79;
+.navbar a:hover,
+.navbar a.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ================= LOGIN BUTTON ================= */
+
+.login-btn {
+  background: var(--primary);
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 9px 18px;
+  border-radius: 22px;
   cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(232,184,154,0.4);
 }
 
-.cart {
-  position: relative;
+.login-btn:hover {
+  background: var(--primary-dark);
 }
 
-.cart-count {
-  position: absolute;
-  top: -6px;
-  right: -8px;
-  background: #b76e79;
-  color: white;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 50%;
-}
-.hero-frame {
-  width: 100%;
-  height: 50vh;   /* 👈 HALF of full screen */
-  border: none;
-  display: block;
-}
-
-.services-frame {
-  width: 1500px; 
-  height: 400px;
- }
-.packages-frame { height: 1600px; }
-.about-frame { height: 900px; }
-.ceo-frame { height: 900px; }
-.footer-frame {
-  width: 100%;
-  height: 520px;
-  border: none;
-}
+/* ================= IFRAME LAYOUT ================= */
 
 iframe {
   width: 100%;
   border: none;
   display: block;
+  background: transparent;
+}
+
+/* Section heights (same as your setup) */
+.hero-frame {
+  height: 50vh;
+}
+
+.services-frame {
+  height: 850px;
+}
+
+/* .packages-frame {
+  height: 1500px;
+   margin-top: 0px;
+  padding-top: 0px;
+} */
+
+.about-frame {
+  height: 900px;
+ 
+}
+
+.ceo-frame {
+  height: 900px;
+}
+
+.footer-frame {
+  height: 520px;
 }
